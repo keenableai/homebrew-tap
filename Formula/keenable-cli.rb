@@ -1,25 +1,25 @@
 class KeenableCli < Formula
   desc "Keenable CLI — authenticate, manage API keys, configure MCP, and search the web"
   homepage "https://keenable.ai"
-  version "0.1.16"
+  version "0.1.17"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.16/keenable-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "550a291dc81379c1497c3c19ea4f228cff27a5dc3b9bad2f0f77b398a7ce66bf"
+      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.17/keenable-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "6047b1483d40ff5f4c634782f5b19aeee585ed7e8f6129f59f861be39fed5245"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.16/keenable-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "3a4116dcbb7e2656c148d4fae07962b53e783babcbd6aba811f95068b055fa8c"
+      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.17/keenable-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "8336ec3eb8deaff54a10dd5d38dc7a11671bc73a0d729e8c0bf69d3560a95c15"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.16/keenable-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9990b0265c9e93be9c928fc1e4bd6a6a493e8fa8b7e663ee9f9b370ea8de776f"
+      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.17/keenable-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "958ec825c00938c247dc07d60e6e88389b5cfae3e1091a7bc361a7b69b27584c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.16/keenable-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "366f98e4228a353740d52726f62a73db3bdf816fa489199c005776795833ec32"
+      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.17/keenable-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "34a14e06e2493db376c11ace8a98368f8a521f4e13a76648cde6260152eaa155"
     end
   end
 
