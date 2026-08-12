@@ -1,25 +1,25 @@
 class KeenableCli < Formula
   desc "Keenable CLI — authenticate, manage API keys, configure MCP, and search the web"
   homepage "https://keenable.ai"
-  version "0.1.25"
+  version "0.1.26"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.25/keenable-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "9990ad25c5836105c9c9e4219ca2b0e323748e50769eaba666dd0b4c578d6790"
+      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.26/keenable-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "eb6aba764ac7472f7cd98015a96a2a4ddb15e7b9f7badcedf338421f3ee1af3a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.25/keenable-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "9a2f2f11c0caf05dc553e729466735c456f9283ae9f3d9eea6975139de270640"
+      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.26/keenable-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "25ba6888882a415c4e5e827b2f686fd4f4f921c39c7033f037b75a6e56896ea9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.25/keenable-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a58d1548eef7baaa44499e9c8a948b18e5c39de777c5670975978c83676daec2"
+      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.26/keenable-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "27aab9a6b40cdc81b876a132aa10f6e3d06b424da600f42a62450f30ba7fb940"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.25/keenable-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a5474516e0a9e127b96ab0c0195b61a980115cf06c7a8680e6a43eb36be9b8b8"
+      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.26/keenable-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "bf7556de30305998db3ad1e4b4ce85f4521e97ed0323864a94d35141c5878ad5"
     end
   end
 
@@ -51,10 +51,18 @@ class KeenableCli < Formula
   end
 
   def install
-    bin.install "keenable" if OS.mac? && Hardware::CPU.arm?
-    bin.install "keenable" if OS.mac? && Hardware::CPU.intel?
-    bin.install "keenable" if OS.linux? && Hardware::CPU.arm?
-    bin.install "keenable" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "keenable"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "keenable"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "keenable"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "keenable"
+    end
 
     install_binary_aliases!
 
