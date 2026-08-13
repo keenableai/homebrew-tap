@@ -1,25 +1,25 @@
 class KeenableCli < Formula
   desc "Keenable CLI — authenticate, manage API keys, configure MCP, and search the web"
   homepage "https://keenable.ai"
-  version "0.1.26"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.26/keenable-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "eb6aba764ac7472f7cd98015a96a2a4ddb15e7b9f7badcedf338421f3ee1af3a"
+      url "https://github.com/keenableai/keenable-cli/releases/download/v0.2.0/keenable-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "0639d03c5927cda7c2d7663e3e52f5c29e0db76099b68dde5b7a495595c72f22"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.26/keenable-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "25ba6888882a415c4e5e827b2f686fd4f4f921c39c7033f037b75a6e56896ea9"
+      url "https://github.com/keenableai/keenable-cli/releases/download/v0.2.0/keenable-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "28e4bb0101770d5a2390700c1265a4a537ddf0bf4d1211f4b98a05c1f0cadcc5"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.26/keenable-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "27aab9a6b40cdc81b876a132aa10f6e3d06b424da600f42a62450f30ba7fb940"
+      url "https://github.com/keenableai/keenable-cli/releases/download/v0.2.0/keenable-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4e85170c134b8e69d3349ee6ca2b4544381566616f044af550eb40187616aa01"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/keenableai/keenable-cli/releases/download/v0.1.26/keenable-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "bf7556de30305998db3ad1e4b4ce85f4521e97ed0323864a94d35141c5878ad5"
+      url "https://github.com/keenableai/keenable-cli/releases/download/v0.2.0/keenable-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "180d38db84674452e54209bbec518d68e227ecc4810b1a002fe555470149dbf8"
     end
   end
 
